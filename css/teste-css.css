@@ -1,0 +1,162 @@
+*,*::before,*::after(box-sizing:border-box)
+
+
+body, h1, h2, p, ul, li, form, input, textarea {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* Layout geral */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    width: 100%;
+    background: #17721c;
+    color: #e6da37;
+    padding: 1rem 0;
+    align-items: center;
+    display: flex;
+}
+
+nav ul {
+    list-style: none;
+    width: 100%;
+
+    justify-content: center;
+	border-bottom: #dbe45b;
+	background-color: #f5eb5b;
+	box-sizing: border-box;
+
+	
+	
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #1e1f1d;
+    text-decoration: none;
+}
+
+header h1 {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+.highlights, .about, .events, .gallery, .contact {
+    padding: 1rem;
+    border: 1px solid #62a01c;
+    border-radius: 5px;
+}
+
+.gallery img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 0.5rem;
+}
+
+form input, form textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+footer {
+    background: #17721c;
+    color: #d1df0d;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* css do calendario */
+
+.espaço{
+    display: flex;
+    gap: 50px;
+   justify-content: center;
+   margin-bottom: 2rem;
+}
+
+
+.calendario {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: white;
+    padding: 20px;
+    width: 300px;
+    
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.dias-da-semana {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.dias {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.dias div {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #eee;
+    height: 50px;
+}
+
+.dias div:nth-child(7n) {
+    border-right: none;
+}
+
+.dias div:nth-last-child(-n+7) {
+    border-bottom: none;
+}
+
+.dias div:hover {
+    background-color: #9b0000;
+    cursor: pointer;
+}
+
+
